@@ -22,7 +22,7 @@ const datos = [
 ];
 
 function getPorras(req, res) {
-  return res.status(200).json(datos);
+  return res.send(datos);
 }
 
 export { getPorras };
