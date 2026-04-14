@@ -1,7 +1,9 @@
 import express from "express";
 import "dotenv/config";
 import router from "./routes/porrasRouter.js";
+import "cors"
 
+app.use(cors())
 const app = express();
 const PORT = process.env.PORT;
 
